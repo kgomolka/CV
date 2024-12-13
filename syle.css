@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    overflow-x: hidden; /* Usunięcie poziomego suwaka */
+}
+
+.container {
+    display: flex;
+    min-height: 100vh; /* Zapewnia, że kontener zajmuje całą wysokość ekranu */
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #0C233C;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    border-right: 3px solid #fff; 
+}
+
+.sidebar h2 {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+    letter-spacing: 1px;
+}
+
+.profile-photo img {
+    width: 50%;
+    border-radius: 0%;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+}
+
+.personal-data ul,
+.skills ul,
+.languages ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.personal-data ul li,
+.skills ul li,
+.languages ul li {
+    margin-bottom: 8px;
+}
+
+/* Prawa część (main content) */
+.main-content {
+    width: 75%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #0C233C;
+}
+
+header h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0C233C;
+    margin-bottom: 20px;
+}
+
+.experience article {
+    margin-bottom: 30px;
+}
+
+.experience article h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.3em;
+    color: #333;
+    position: relative;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #aaa;
+}
+
+.experience article h3 .dates {
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight: normal;
+    float: right;
+    color: #666;
+}
+
+.experience ul {
+    list-style: disc;
+    margin: 0;
+    padding-left: 20px;
+    color: #333;
+}
+
+.experience ul li {
+    margin-bottom: 5px;
+}
+
+.education h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0C233C;
+    margin-bottom: 20px;
+}
+
+.education ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education ul li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.dates {
+    font-size: 0.9em;
+    color: #666;
+}
