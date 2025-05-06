@@ -1,0 +1,234 @@
+/* Resetowanie marginesów i paddingów */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+/* Główny kontener */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Lewa kolumna (sidebar) */
+.sidebar {
+    width: 25%;
+    background-color: #0C233C;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    border-right: 3px solid #fff;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.sidebar h2 {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+    letter-spacing: 1px;
+}
+
+.profile-photo img {
+    width: 50%;
+    max-width: 100%;
+    border-radius: 0%;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+    transition: all 0.3s ease;
+}
+
+.personal-data ul,
+.skills ul,
+.languages ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.personal-data ul li,
+.skills ul li,
+.languages ul li {
+    margin-bottom: 8px;
+}
+
+/* Prawa kolumna (main content) */
+.main-content {
+    width: 75%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #0C233C;
+}
+
+header h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0C233C;
+    margin-bottom: 20px;
+}
+
+.experience article {
+    margin-bottom: 30px;
+}
+
+.experience article h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.3em;
+    color: #333;
+    position: relative;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #aaa;
+}
+
+.experience article h3 .dates {
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight: normal;
+    float: right;
+    color: #666;
+}
+
+.experience ul {
+    list-style: disc;
+    margin: 0;
+    padding-left: 20px;
+    color: #333;
+}
+
+.experience ul li {
+    margin-bottom: 5px;
+}
+
+.education h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0C233C;
+    margin-bottom: 20px;
+}
+
+.education ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education ul li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.dates {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* --------------------------------- */
+/* RESPONSYWNOŚĆ DLA TABLETÓW I TELEFONÓW */
+/* --------------------------------- */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar, .main-content {
+        width: 100%;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 3px solid #fff;
+        text-align: center;
+    }
+
+    .profile-photo img {
+        width: 70%;
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header h2 {
+        font-size: 1.3em;
+    }
+
+    .experience article h3 {
+        font-size: 1.1em;
+    }
+
+    .experience article h3 .dates {
+        float: none;
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+/* --------------------------------- */
+/* DODATKOWA RESPONSYWNOŚĆ DLA MAŁYCH TELEFONÓW */
+/* --------------------------------- */
+@media (max-width: 480px) {
+    .sidebar {
+        padding: 15px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    .experience article h3 {
+        font-size: 1em;
+    }
+
+    .profile-photo img {
+        width: 80%;
+    }
+
+    .personal-data ul li,
+    .skills ul li,
+    .languages ul li {
+        font-size: 0.95em;
+    }
+
+    .experience ul li {
+        font-size: 0.95em;
+    }
+}
+
+/* Płynne przejścia dla zmieniających się rozmiarów */
+* {
+    transition: all 0.3s ease;
+}
